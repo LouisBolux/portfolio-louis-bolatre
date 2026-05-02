@@ -273,7 +273,9 @@ const sideProjects = [
     solution:
       "Une PWA minimaliste, offline-first, qui démarre en 2 secondes.",
     stack: ["Vite", "React", "PWA"],
-    links: [],
+    links: [
+      { label: "Voir l'app", href: "https://darts-score-counter.vercel.app/" },
+    ],
   },
   {
     name: "Épice & Tout 2A",
@@ -283,7 +285,10 @@ const sideProjects = [
     solution:
       "Un site complet avec présentation, carte des produits et contact — construit avec Claude, déployé en autonomie.",
     stack: [],
-    links: [],
+    links: [
+      { label: "Voir le site", href: "https://epicetout2a.fr/" },
+      { label: "Instagram", href: "https://www.instagram.com/epicetout2a/" },
+    ],
   },
 ];
 
