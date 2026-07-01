@@ -1,23 +1,13 @@
 import Link from "next/link";
 import { cases } from "@/content/cases";
 
-type Mode = "recruteur" | "client" | null;
-
-export default async function Home({
-  searchParams,
-}: {
-  searchParams: Promise<{ for?: string }>;
-}) {
-  const { for: modeParam } = await searchParams;
-  const mode: Mode =
-    modeParam === "recruteur" || modeParam === "client" ? modeParam : null;
-
+export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Nav />
       <main>
-        <Hero mode={mode} />
-        {mode && <PourToiSi mode={mode} />}
+        <Hero />
+        <PourToiSi />
         <About />
         <SideProjects />
         <TrackRecord />
@@ -54,137 +44,50 @@ function Nav() {
   );
 }
 
-const modeContent = {
-  recruteur: {
-    badge: "Senior Product Manager · Disponible",
-    subtitle: "Je ship en autonomie avec l'IA.",
-    subtitle2: "Pas juste stratège.",
-    cta1: { label: "Voir le track record", href: "#track-record" },
-    cta2: { label: "Me contacter", href: "#contact" },
-    switchLabel: "Vous cherchez une mission freelance ?",
-    switchHref: "/?for=client",
-  },
-  client: {
-    badge: "PM Freelance · Disponible",
-    subtitle: "Je prends ownership sur ton produit.",
-    subtitle2: "Pas juste de la consultation.",
-    cta1: { label: "Voir mes missions", href: "#track-record" },
-    cta2: { label: "Me contacter", href: "#contact" },
-    switchLabel: "Vous recrutez un PM salarié ?",
-    switchHref: "/?for=recruteur",
-  },
-};
-
-function Hero({ mode }: { mode: Mode }) {
-  if (!mode) {
-    return (
-      <section className="max-w-4xl mx-auto px-6 pt-24 pb-24">
-        <p className="text-xs font-semibold text-indigo-600 tracking-widest uppercase mb-6">
-          Senior Product Manager
-        </p>
-        <h1 className="text-5xl md:text-7xl font-bold text-zinc-900 leading-none tracking-tight mb-8">
-          Louis Bolatre
-        </h1>
-        <p className="text-xl md:text-2xl text-zinc-500 max-w-lg mb-2 leading-relaxed">
-          Je ship en autonomie avec l&apos;IA.
-        </p>
-        <p className="text-xl md:text-2xl text-zinc-300 max-w-lg mb-12 leading-relaxed">
-          Pas juste stratège.
-        </p>
-        <p className="text-sm font-medium text-zinc-700 mb-4">
-          Vous êtes&nbsp;?
-        </p>
-        <div className="flex flex-wrap gap-3 mb-8">
-          <Link
-            href="/?for=recruteur"
-            className="inline-flex items-center gap-2 bg-zinc-900 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors"
-          >
-            Je recrute un PM →
-          </Link>
-          <Link
-            href="/?for=client"
-            className="inline-flex items-center gap-2 border border-zinc-200 text-zinc-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-zinc-50 transition-colors"
-          >
-            Je cherche une mission freelance →
-          </Link>
-        </div>
-        <p className="text-xs text-zinc-400">
-          Ce portfolio a été construit et déployé en autonomie avec{" "}
-          <span className="text-zinc-600 font-medium">Claude Code</span>{" "}
-          — preuve #1 de ce que je dis faire.
-        </p>
-      </section>
-    );
-  }
-
-  const c = modeContent[mode];
-
+function Hero() {
   return (
     <section className="max-w-4xl mx-auto px-6 pt-24 pb-24">
       <p className="text-xs font-semibold text-indigo-600 tracking-widest uppercase mb-6">
-        {c.badge}
+        Senior Product Manager · Disponible
       </p>
       <h1 className="text-5xl md:text-7xl font-bold text-zinc-900 leading-none tracking-tight mb-8">
         Louis Bolatre
       </h1>
       <p className="text-xl md:text-2xl text-zinc-500 max-w-lg mb-2 leading-relaxed">
-        {c.subtitle}
+        Je ship en autonomie avec l&apos;IA.
       </p>
       <p className="text-xl md:text-2xl text-zinc-300 max-w-lg mb-12 leading-relaxed">
-        {c.subtitle2}
+        Pas juste stratège.
       </p>
       <div className="flex flex-wrap gap-3 mb-8">
         <a
-          href={c.cta1.href}
+          href="#track-record"
           className="inline-flex items-center gap-2 bg-zinc-900 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors"
         >
-          {c.cta1.label}
+          Voir le track record →
         </a>
         <a
-          href={c.cta2.href}
+          href="#contact"
           className="inline-flex items-center gap-2 border border-zinc-200 text-zinc-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-zinc-50 transition-colors"
         >
-          {c.cta2.label}
+          Me contacter →
         </a>
       </div>
-      <p className="text-xs text-zinc-400 mb-2">
+      <p className="text-xs text-zinc-400">
         Ce portfolio a été construit et déployé en autonomie avec{" "}
         <span className="text-zinc-600 font-medium">Claude Code</span>{" "}
         — preuve #1 de ce que je dis faire.
       </p>
-      <Link
-        href={c.switchHref}
-        className="text-xs text-zinc-400 hover:text-zinc-600 transition-colors"
-      >
-        {c.switchLabel} →
-      </Link>
     </section>
   );
 }
 
-function PourToiSi({ mode }: { mode: "recruteur" | "client" }) {
-  const content = {
-    recruteur: {
-      items: [
-        "Tu cherches un Senior PM ou 1er PM pour une startup post-levée",
-        "Tu veux quelqu'un qui livre sans avoir besoin d'être managé",
-        "Tu apprécies un PM qui comprend la technique de l'intérieur",
-      ],
-      notFor:
-        "Tu cherches un PM pour gérer un backlog dans une grande organisation structurée.",
-    },
-    client: {
-      items: [
-        "Tu as un produit à lancer sans PM interne",
-        "Tes devs avancent sans cadrage produit clair",
-        "Tu veux du delivery, pas juste de la stratégie",
-      ],
-      notFor:
-        "Tu cherches de la consultation stratégique sans engagement sur le delivery.",
-    },
-  };
-
-  const { items, notFor } = content[mode];
+function PourToiSi() {
+  const items = [
+    "Tu cherches un Senior PM ou 1er PM pour une startup post-levée",
+    "Tu veux quelqu'un qui livre sans avoir besoin d'être managé",
+    "Tu apprécies un PM qui comprend la technique de l'intérieur",
+  ];
 
   return (
     <section className="border-y border-zinc-100 py-12">
@@ -205,7 +108,20 @@ function PourToiSi({ mode }: { mode: "recruteur" | "client" }) {
             <p className="text-xs font-semibold text-zinc-400 tracking-widest uppercase mb-3">
               Pas pour toi si
             </p>
-            <p className="text-zinc-400">{notFor}</p>
+            <p className="text-zinc-400 mb-4">
+              Tu cherches un PM pour gérer un backlog dans une grande
+              organisation structurée.
+            </p>
+            <p className="text-zinc-400">
+              Ouvert aussi aux missions freelance ponctuelles —{" "}
+              <a
+                href="#contact"
+                className="text-indigo-600 hover:text-indigo-800 font-medium"
+              >
+                écris-moi
+              </a>
+              .
+            </p>
           </div>
         </div>
       </div>
@@ -278,7 +194,7 @@ const sideProjects = [
     ],
   },
   {
-    name: "Épice & Tout 2A",
+    name: "Épicétout2A",
     tagline: "Site vitrine pour une épicerie corse",
     problem:
       "Mon père avait besoin d'une présence en ligne pour son épicerie. Aucun budget agence.",
@@ -427,7 +343,7 @@ function TrackRecord() {
       <div className="max-w-4xl mx-auto px-6">
         <SectionLabel>PM Track Record</SectionLabel>
         <p className="text-zinc-500 mb-12 max-w-xl">
-          6 ans de delivery en startup et scale-up.
+          7 ans de delivery en startup et scale-up.
         </p>
         <div className="grid gap-5 md:grid-cols-3">
           {trackRecordItems.map((item) => (
