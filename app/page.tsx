@@ -471,7 +471,9 @@ function Contact() {
               </p>
             </div>
             <a
-              href="#"
+              href="https://calendar.app.google/ZkfWTL3oL6zpArWeA"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-indigo-600 text-white px-5 py-3 rounded-lg text-sm font-medium hover:bg-indigo-500 transition-colors self-start"
             >
               Réserver un créneau →
