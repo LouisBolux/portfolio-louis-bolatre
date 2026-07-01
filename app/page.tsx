@@ -146,8 +146,11 @@ function About() {
           <p>
             Ce qui me distingue en 2026 : je ne me contente pas de spécifier. Je
             ship. En dehors de mes missions, j&apos;ai construit 3 applications
-            en autonomie avec l&apos;IA — une app sociale de recettes et de
-            courses, un compteur de fléchettes, un site pour un commerce local.
+            en autonomie avec l&apos;IA —{" "}
+            <strong className="text-zinc-700">Mescla</strong>{" "}
+            (recettes &amp; courses),{" "}
+            <strong className="text-zinc-700">Darts Score Counter</strong>,{" "}
+            <strong className="text-zinc-700">Épicétout2A</strong>.
             Pas pour le CV. Pour rester concret dans un métier qui dérive
             facilement vers l&apos;abstraction, et pour comprendre de
             l&apos;intérieur ce que vivent mes équipes techniques.
@@ -171,7 +174,7 @@ function About() {
 const sideProjects = [
   {
     name: "Mescla",
-    tagline: "App mobile de partage de recettes et de liste de courses",
+    tagline: "Web app mobile-first de partage de recettes et de liste de courses",
     problem:
       "Créer un menu de la semaine prend du temps, faire les courses aussi. Avec des proches, c'est encore plus complexe.",
     solution:
