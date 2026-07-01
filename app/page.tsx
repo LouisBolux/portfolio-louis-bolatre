@@ -53,11 +53,13 @@ function Hero() {
       <h1 className="text-5xl md:text-7xl font-bold text-zinc-900 leading-none tracking-tight mb-8">
         Louis Bolatre
       </h1>
-      <p className="text-xl md:text-2xl text-zinc-500 max-w-lg mb-2 leading-relaxed">
-        Je ship en autonomie avec l&apos;IA.
+      <p className="text-xl md:text-2xl font-semibold text-zinc-800 max-w-2xl mb-4 leading-snug">
+        Senior PM. Concepteur &amp; Bâtisseur de produits (0 to 1).
       </p>
-      <p className="text-xl md:text-2xl text-zinc-300 max-w-lg mb-12 leading-relaxed">
-        Pas juste stratège.
+      <p className="text-lg text-zinc-500 max-w-xl mb-12 leading-relaxed">
+        Allier des bases théoriques solides à un style résolument pragmatique.
+        Je combine la rigueur de la Discovery et la vélocité de l&apos;ingénierie
+        rapide avec l&apos;IA pour concevoir, structurer et lancer des produits complexes.
       </p>
       <div className="flex flex-wrap gap-3 mb-8">
         <a
@@ -73,10 +75,10 @@ function Hero() {
           Me contacter →
         </a>
       </div>
-      <p className="text-xs text-zinc-400">
-        Ce portfolio a été construit et déployé en autonomie avec{" "}
-        <span className="text-zinc-600 font-medium">Claude Code</span>{" "}
-        — preuve #1 de ce que je dis faire.
+      <p className="text-xs text-zinc-400 italic">
+        Ce portfolio a été codé en autonomie avec{" "}
+        <span className="text-zinc-600 font-medium not-italic">Claude Code</span>{" "}
+        — preuve opérationnelle de ma capacité à matérialiser mes idées et à comprendre la technique de l&apos;intérieur.
       </p>
     </section>
   );
@@ -84,9 +86,9 @@ function Hero() {
 
 function PourToiSi() {
   const items = [
-    "Tu cherches un Senior PM ou 1er PM pour une startup post-levée",
-    "Tu veux quelqu'un qui livre sans avoir besoin d'être managé",
-    "Tu apprécies un PM qui comprend la technique de l'intérieur",
+    "Tu cherches un Senior PM, Lead PM ou 1st PM pour concevoir et lancer (0 to 1) un produit ou de nouveaux chantiers post-levée.",
+    "Tu veux un profil autonome, capable de naviguer dans le flou sans avoir besoin d'être managé.",
+    "Tu apprécies un PM qui comprend les contraintes des développeurs et sait « drafter » des prototypes pour dérisquer le delivery.",
   ];
 
   return (
@@ -109,8 +111,8 @@ function PourToiSi() {
               Pas pour toi si
             </p>
             <p className="text-zinc-400 mb-4">
-              Tu cherches un PM pour gérer un backlog dans une grande
-              organisation structurée.
+              Tu cherches un PM pour simplement faire de la maintenance de backlog (Run)
+              ou gérer des processus rigides dans une grande organisation structurée.
             </p>
             <p className="text-zinc-400">
               Ouvert aussi aux missions freelance ponctuelles —{" "}
@@ -136,30 +138,22 @@ function About() {
         <SectionLabel>À propos</SectionLabel>
         <div className="max-w-2xl space-y-5 text-zinc-600 leading-relaxed text-[17px]">
           <p>
-            J&apos;ai passé 7 ans à construire des produits dans des
-            environnements où la vitesse compte — Kolecto, Ledger, Electra,
-            Pyxo, Calldesk — en missions via{" "}
-            <span className="text-zinc-900 font-medium">Thiga</span> ou en
-            direct. À chaque fois, le même objectif : comprendre vite, aligner
-            l&apos;équipe, livrer ce qui crée de la valeur.
+            Après plusieurs années passées à lancer des produits de zéro en
+            startup (notamment comme premier PM chez{" "}
+            <span className="text-zinc-900 font-medium">Pyxo</span> post-Série
+            A), j&apos;ai rejoint le cabinet{" "}
+            <span className="text-zinc-900 font-medium">Thiga</span>. Cette
+            étape de conseil a été le moment clé pour consolider, structurer et
+            théoriser ma pratique du Product Management au contact
+            d&apos;environnements hautement exigeants (Ledger, Electra,
+            Kolecto).
           </p>
           <p>
-            Ce qui me distingue en 2026 : je ne me contente pas de spécifier. Je
-            ship. En dehors de mes missions, j&apos;ai construit 3 applications
-            en autonomie avec l&apos;IA —{" "}
-            <strong className="text-zinc-700">Mescla</strong>{" "}
-            (recettes &amp; courses),{" "}
-            <strong className="text-zinc-700">Darts Score Counter</strong>,{" "}
-            <strong className="text-zinc-700">Épicétout2A</strong>.
-            Pas pour le CV. Pour rester concret dans un métier qui dérive
-            facilement vers l&apos;abstraction, et pour comprendre de
-            l&apos;intérieur ce que vivent mes équipes techniques.
-          </p>
-          <p>
-            Mon expérience la plus formative : 1er PM chez Pyxo juste après la
-            Série A. Deux apps construites de zéro, 5 développeurs, un CTO en
-            guise d&apos;EM. Pas de processus existant, pas de playbook. Juste
-            les bons arbitrages au bon moment.
+            Aujourd&apos;hui, je combine ces bases théoriques d&apos;élite
+            (Discovery structurée, frameworks de priorisation, Shape Up, OKRs)
+            avec un style résolument pragmatique et orienté &laquo;&nbsp;faire&nbsp;&raquo;.
+            Je mets cette double force au service de structures agiles pour
+            concevoir et propulser de nouveaux produits (Build).
           </p>
           <p className="text-zinc-900 font-medium">
             Je cherche un poste de Senior PM, Lead PM, ou 1st PM dans une
@@ -411,12 +405,19 @@ function HowIWork() {
             <h3 className="font-semibold text-zinc-900 mb-3">
               IA comme outil de build
             </h3>
+            <p className="text-zinc-800 text-sm font-medium mb-2">
+              Drafter le plus loin possible avec l&apos;IA.
+            </p>
             <p className="text-zinc-500 text-sm leading-relaxed">
-              Je ship des apps en autonomie avec Claude Code, Lovable, et
-              Supabase. Trois projets en production. Ça m&apos;a rendu meilleur
-              PM : je comprends mieux les contraintes techniques, je spécifie
-              plus précisément, et je peux tester des idées sans mobiliser un
-              dev.
+              Je ne me contente pas de rédiger des spécifications fonctionnelles
+              abstraites. J&apos;utilise la puissance de l&apos;IA pour coder et
+              déployer de vraies applications de test (Mescla, Darts Score). Mon
+              but n&apos;est pas de pousser mon code en production dans votre
+              entreprise, mais de pousser le &laquo;&nbsp;draft&nbsp;&raquo; au
+              plus proche de la réalité. Cela me permet d&apos;identifier les
+              failles de spécifications, de parler le même langage que mes
+              équipes techniques et de m&apos;assurer que ce que nous
+              développerons en équipe sera d&apos;une pertinence absolue.
             </p>
           </div>
           <div>
@@ -454,29 +455,68 @@ function Contact() {
   return (
     <footer id="contact" className="bg-zinc-900 text-white py-24">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10">Parlons-en.</h2>
-        <div className="flex flex-col sm:flex-row gap-6 mb-16">
-          <a
-            href="mailto:louis.bolatre@gmail.com"
-            className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-indigo-500 transition-colors"
-          >
-            louis.bolatre@gmail.com
-          </a>
+        <h2 className="text-3xl md:text-4xl font-bold mb-14">Parlons-en.</h2>
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {/* Option CDI — prioritaire */}
+          <div className="border border-zinc-700 rounded-xl p-8 flex flex-col gap-6">
+            <div>
+              <p className="text-xs font-semibold text-indigo-400 tracking-widest uppercase mb-3">
+                Poste CDI · Prioritaire
+              </p>
+              <p className="text-zinc-300 text-sm leading-relaxed">
+                Tu cherches ton futur Senior PM, Lead PM ou premier PM à temps
+                plein (sur Lille, Paris ou en télétravail) pour structurer et
+                lancer un nouveau produit&nbsp;? Discutons de vos défis produit
+                du moment autour d&apos;un café virtuel.
+              </p>
+            </div>
+            <a
+              href="#"
+              className="inline-flex items-center gap-2 bg-indigo-600 text-white px-5 py-3 rounded-lg text-sm font-medium hover:bg-indigo-500 transition-colors self-start"
+            >
+              Réserver un créneau →
+            </a>
+          </div>
+
+          {/* Option Freelance */}
+          <div className="border border-zinc-700 rounded-xl p-8 flex flex-col gap-6">
+            <div>
+              <p className="text-xs font-semibold text-zinc-400 tracking-widest uppercase mb-3">
+                Mission Freelance · Conseil
+              </p>
+              <p className="text-zinc-300 text-sm leading-relaxed">
+                Tu as besoin d&apos;un coup de boost méthodologique ponctuel,
+                d&apos;un sprint de Discovery express ou d&apos;un prototype
+                fonctionnel (MVP) drafté à la vitesse de l&apos;éclair grâce à
+                l&apos;IA&nbsp;? Sollicite une mission de conseil ou de
+                transition.
+              </p>
+            </div>
+            <a
+              href="mailto:louis.bolatre@gmail.com"
+              className="inline-flex items-center gap-2 border border-zinc-600 text-zinc-300 px-5 py-3 rounded-lg text-sm font-medium hover:border-zinc-400 hover:text-white transition-colors self-start"
+            >
+              Écrire un e-mail →
+            </a>
+          </div>
+        </div>
+
+        <div className="flex gap-4 border-t border-zinc-800 pt-8">
           <a
             href="https://www.linkedin.com/in/louisbolatre"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-zinc-700 text-zinc-300 px-6 py-3 rounded-lg text-sm font-medium hover:border-zinc-500 hover:text-white transition-colors"
+            className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors"
           >
-            LinkedIn →
+            LinkedIn
           </a>
           <a
             href="https://github.com/louisbolatre"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-zinc-700 text-zinc-300 px-6 py-3 rounded-lg text-sm font-medium hover:border-zinc-500 hover:text-white transition-colors"
+            className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors"
           >
-            GitHub →
+            GitHub
           </a>
         </div>
       </div>
