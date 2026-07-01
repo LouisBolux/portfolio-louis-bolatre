@@ -1,0 +1,55 @@
+export const meta = {
+  company: "Electra",
+  period: "Jan. – May 2025",
+  domain: "GreenTech · Electric Mobility",
+  tagline: "4,000 → 11,000 chargers via Spark Alliance · B2C app · Android Auto",
+  intro: "Charging UX redesigned. Network extended ×2.75 via Spark Alliance.",
+}
+
+<Role title="PM (Thiga mission)" period="Jan. – May 2025" team="5–8 devs" />
+
+## Context
+
+Electra deploys and operates fast-charging stations for electric vehicles across Europe. Where slow charging takes hours, Electra bets on high-power chargers — 20 minutes is enough for a significant charge. The B2C app is the main entry point: find a charger, start charging, pay.
+
+Products covered: iOS/Android mobile app, webapp, Android Auto embedded app.
+
+## The challenge
+
+The charging experience starts well before plugging in the cable — finding an available charger, understanding its power output, knowing if it's compatible with your vehicle, knowing the price. It's **the lead-up to charging** that concentrates the most user friction, and that's where the app had the most to gain.
+
+In parallel: Electra wanted to massively extend its network coverage by integrating partner chargers via **Spark Alliance**, without degrading the consistency of the experience (data, real-time statuses, price reliability).
+
+## The key decision
+
+<Callout title="Deliberate prioritization">
+A 5-month mission, with the team pulled across multiple fronts at once (mobile app, webapp, Android Auto): I had to choose where to put delivery energy rather than half-running everything in parallel.
+
+I prioritized two initiatives with direct, measurable short-term impact — the charger-search experience overhaul (search, filters, payment) and the Spark Alliance integration. Android Auto and the EV route planner deliberately stayed at the discovery stage: properly scoped, but not pushed into delivery within the mission's timeframe, so as not to dilute effort on longer, more uncertain initiatives.
+</Callout>
+
+## What I did
+
+**Location, filters, search & payment improvements** — redesign of the charger search experience upstream of charging: filters by connector type, power output, vehicle compatibility, real-time availability. Reduced back-and-forth between the app and the physical charger.
+
+**Android Auto & EV planner discovery** — scoping embedded use cases (Android Auto): strict safety constraints (minimal interactions while driving), dashboard-screen UX specifics, integrated navigation. Discovery stayed at the scoping stage — no delivery on this initiative.
+
+**Spark Alliance integration** — extending the network of chargers accessible in the app through the Spark Alliance interoperability network. Work on data consistency (statuses, prices, availability) between Electra chargers and partner chargers.
+
+**EV route planner discovery** — scoping a new use case: a smart planner, "electric Waze"-style — optimizing routes by factoring in charging stops based on vehicle range, trip time, and real-time charger availability. Stayed at the discovery stage.
+
+## Results
+
+<MetricGroup>
+  <Metric value="×2.75" label="Network extended via Spark Alliance" sub="4,000 → 11,000 chargers" />
+  <Metric value="↗" label="Android Auto & planner" sub="Discovery scoped" />
+  <Metric value="↑" label="Pre-charge UX" sub="Search, filters, payment" />
+</MetricGroup>
+
+The Spark Alliance integration nearly tripled the network accessible from the app — going from 4,000 to 11,000 chargers. The route planner discovery laid the groundwork for strong product differentiation in a fast-growing market.
+
+## What I learned
+
+Mobility product UX is as much about the experience **before** use as during it. The friction of "finding and choosing a charger" is often more blocking than the charging itself.
+
+Android Auto confronted me with radically different UX constraints than the mobile app: fewer interactions, more context, zero tolerance for error while the user is driving. Designing for a dashboard screen means learning to remove rather than add.

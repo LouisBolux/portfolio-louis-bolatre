@@ -1,0 +1,67 @@
+export const meta = {
+  company: "Pyxo",
+  period: "2021 – 2023",
+  domain: "FoodTech",
+  tagline: "1st PM · 2 apps from scratch · post-Series A",
+  intro: "Major accounts signed: McDonald's, CROUS, Sushi Shop, Metro.",
+}
+
+<Role title="1st Product Manager" period="2021 – 2023" team="5 devs · 1 CTO/EM · 2 designers" />
+
+## Context
+
+Pyxo is a startup eliminating single-use packaging in the food service industry through a reusable container ecosystem with end-to-end traceability. The idea: every customer leaves with a container, returns it later, and the system tracks everything — loan, use, return, cleaning.
+
+I joined right after the Series A, as the company's **1st PM**. Nothing existed digitally yet. Two apps to build from scratch, simultaneously.
+
+## The challenge
+
+**B2B restaurant app** — on Sunmi Android terminals, used by kitchen teams during rush hours. Strong hardware constraints, UX built for fast gestures with gloves on, with no real-condition training possible.
+
+**B2C consumer app** — iOS and Android, for users discovering the concept at the moment of ordering. Zero friction allowed.
+
+Plus an operational back-office and partner integrations — POS systems (Lightspeed, Zelty...), RFID badges, physical collectors.
+
+## The key decision
+
+<Callout title="Product decision">
+Leadership wanted to launch with as many features as possible to reassure major accounts. I advocated for an MVP centered on a single goal: make the full **loan → use → return → traceability** cycle work before optimizing anything else.
+
+Argument: without a functional cycle, no additional feature would have value. With data from the first field pilots, I was able to show that the friction was in the base cycle — not in the absence of advanced features.
+</Callout>
+
+This framing allowed us to ship fast and build trust with major accounts from the first months, rather than overpromising and missing deadlines.
+
+## What I did
+
+**Field discovery** — restaurant owner interviews, consumer interviews, operational teams. Understanding the micro-frictions of the return cycle, checkout blockers, RFID traceability issues in real conditions.
+
+**Product architecture for both apps in parallel** — key technical choices on offline sync (Sunmi in low-network zones), RFID scanning, standalone vs. POS-integrated deployment modes.
+
+**Shape Up roadmap** — 6-week cycles, hard scopes. No mid-cycle negotiation. The team knew exactly what was shipping and when.
+
+**End-to-end delivery** — specs, dev/design coordination, field QA, rollout to first pilot customers.
+
+**Cross-functional projects** — adapting a physical hardware collector, sales pitch, presentation support for major account negotiations.
+
+## Results
+
+<MetricGroup>
+  <Metric value="2" label="Apps shipped from scratch" sub="B2B + B2C" />
+  <Metric value="4" label="Major accounts signed" sub="McDonald's · CROUS · Sushi Shop · Metro" />
+  <Metric value="2" label="Deployment modes" sub="Standalone & POS-integrated" />
+</MetricGroup>
+
+Functional hardware-software ecosystem in production. POS system and RFID badge integrations enabled deployments across very different configurations — fast food, university catering, premium dining.
+
+## What I learned
+
+<Callout title="Systems thinking, Hardware / Software">
+Designing a packaging reuse ecosystem for food service (Sunmi terminals in kitchens, connected collectors, RFID chips) taught me to think about the product holistically. During kitchen rush hours, errors aren't tolerated. I designed the software anticipating physical and network failures (offline sync for terminals).
+
+To reduce load on our technical support, I chose to identify and train "power users" directly at our restaurant clients. By giving them the keys to fix simple physical issues on-site, they became our best operational allies. This experience proved that every software change must be validated against the real physical ergonomics around the hardware.
+</Callout>
+
+Being the 1st PM means deciding what you **don't** build. The roadmap isn't a feature catalog, it's an argument.
+
+In a post-Series A environment, the founding team's trust is built by delivering what you said you would — not by agreeing on everything. And the best way to convince a major account is to have a product that actually works within the first 3 months, not a 40-slide deck.

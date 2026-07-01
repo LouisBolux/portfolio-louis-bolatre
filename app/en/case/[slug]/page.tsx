@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { cases } from "@/content/cases";
+import { cases } from "@/content/en/cases";
 
 export function generateStaticParams() {
   return cases.map(({ slug }) => ({ slug }));
@@ -15,19 +15,19 @@ type CaseMeta = {
   intro: string;
 };
 
-export async function generateMetadata({ params }: PageProps<"/case/[slug]">) {
+export async function generateMetadata({ params }: PageProps<"/en/case/[slug]">) {
   const { slug } = await params;
-  const { meta } = (await import(`@/content/${slug}.mdx`)) as { meta: CaseMeta };
+  const { meta } = (await import(`@/content/en/${slug}.mdx`)) as { meta: CaseMeta };
   return {
     title: `${meta.company} — Louis Bolatre`,
     description: meta.tagline,
   };
 }
 
-export default async function CaseStudyPage({ params }: PageProps<"/case/[slug]">) {
+export default async function CaseStudyPageEn({ params }: PageProps<"/en/case/[slug]">) {
   const { slug } = await params;
   const { default: Content, meta } = (await import(
-    `@/content/${slug}.mdx`
+    `@/content/en/${slug}.mdx`
   )) as { default: React.ComponentType; meta: CaseMeta };
 
   return (
@@ -35,22 +35,14 @@ export default async function CaseStudyPage({ params }: PageProps<"/case/[slug]"
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-zinc-100">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link
-            href="/"
+            href="/en"
             className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors"
           >
             ← Louis Bolatre
           </Link>
-          <div className="flex items-center gap-4">
-            <span className="text-xs text-zinc-400 font-medium tracking-wide uppercase">
-              Case Study
-            </span>
-            <Link
-              href={`/en/case/${slug}`}
-              className="text-xs font-medium border border-zinc-200 rounded-md px-2 py-1 text-zinc-500 hover:bg-zinc-50 transition-colors"
-            >
-              EN
-            </Link>
-          </div>
+          <span className="text-xs text-zinc-400 font-medium tracking-wide uppercase">
+            Case Study
+          </span>
         </div>
       </nav>
 
@@ -76,14 +68,14 @@ export default async function CaseStudyPage({ params }: PageProps<"/case/[slug]"
       <footer className="border-t border-zinc-100 py-12">
         <div className="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
-            <p className="text-sm text-zinc-500 mb-1">Autres case studies</p>
+            <p className="text-sm text-zinc-500 mb-1">Other case studies</p>
             <div className="flex gap-4 flex-wrap">
               {cases
                 .filter((c) => c.slug !== slug)
                 .map((c) => (
                   <Link
                     key={c.slug}
-                    href={`/case/${c.slug}`}
+                    href={`/en/case/${c.slug}`}
                     className="text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors"
                   >
                     {c.label} →
@@ -92,10 +84,10 @@ export default async function CaseStudyPage({ params }: PageProps<"/case/[slug]"
             </div>
           </div>
           <Link
-            href="/#contact"
+            href="/en#contact"
             className="inline-flex items-center gap-2 bg-zinc-900 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors"
           >
-            Me contacter
+            Get in touch
           </Link>
         </div>
       </footer>

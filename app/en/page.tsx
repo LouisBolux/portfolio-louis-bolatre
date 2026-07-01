@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function HomeEn() {
   return (
     <div className="min-h-screen bg-white">
       <Nav />
@@ -21,15 +21,15 @@ function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-zinc-100">
       <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-semibold text-zinc-900 text-sm hover:text-zinc-600 transition-colors">
+        <Link href="/en" className="font-semibold text-zinc-900 text-sm hover:text-zinc-600 transition-colors">
           Louis Bolatre
         </Link>
         <div className="flex gap-6 text-sm text-zinc-500 items-center">
           <a href="#about" className="hover:text-zinc-900 transition-colors">
-            À propos
+            About
           </a>
           <a href="#projects" className="hover:text-zinc-900 transition-colors">
-            Projets
+            Projects
           </a>
           <a href="#track-record" className="hover:text-zinc-900 transition-colors">
             Track Record
@@ -38,10 +38,10 @@ function Nav() {
             Contact
           </a>
           <Link
-            href="/en"
+            href="/"
             className="text-xs font-medium border border-zinc-200 rounded-md px-2 py-1 hover:bg-zinc-50 transition-colors"
           >
-            EN
+            FR
           </Link>
         </div>
       </div>
@@ -53,31 +53,31 @@ function Hero() {
   return (
     <section className="max-w-4xl mx-auto px-6 pt-24 pb-24">
       <p className="text-xs font-semibold text-indigo-600 tracking-widest uppercase mb-6">
-        Senior Product Manager · Disponible
+        Senior Product Manager · Available
       </p>
       <h1 className="text-5xl md:text-7xl font-bold text-zinc-900 leading-none tracking-tight mb-8">
         Louis Bolatre
       </h1>
       <p className="text-xl md:text-2xl font-semibold text-zinc-800 max-w-2xl mb-4 leading-snug">
-        Senior PM. Concepteur &amp; Bâtisseur de produits (0 to 1).
+        Senior PM. Product designer &amp; builder (0 to 1).
       </p>
       <p className="text-lg text-zinc-500 max-w-xl mb-12 leading-relaxed">
-        Allier des bases théoriques solides à un style résolument pragmatique.
-        Je combine la rigueur de la Discovery et la vélocité de l&apos;ingénierie
-        rapide avec l&apos;IA pour concevoir, structurer et lancer des produits complexes.
+        Combining solid theoretical foundations with a resolutely pragmatic
+        style. I blend rigorous discovery with the velocity of rapid,
+        AI-assisted engineering to design, structure and ship complex products.
       </p>
       <div className="flex flex-wrap gap-3 mb-8">
         <a
           href="#track-record"
           className="inline-flex items-center gap-2 bg-zinc-900 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors"
         >
-          Voir le track record →
+          See the track record →
         </a>
         <a
           href="#contact"
           className="inline-flex items-center gap-2 border border-zinc-200 text-zinc-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-zinc-50 transition-colors"
         >
-          Me contacter →
+          Get in touch →
         </a>
         <a
           href="/cv-louis-bolatre.pdf"
@@ -85,13 +85,13 @@ function Hero() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 border border-zinc-200 text-zinc-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-zinc-50 transition-colors"
         >
-          Télécharger le CV ↓
+          Download CV ↓
         </a>
       </div>
       <p className="text-xs text-zinc-400 italic">
-        Ce portfolio a été codé en autonomie avec{" "}
+        This portfolio was coded autonomously with{" "}
         <span className="text-zinc-600 font-medium not-italic">Claude Code</span>{" "}
-        — preuve opérationnelle de ma capacité à matérialiser mes idées et à comprendre la technique de l&apos;intérieur.
+        — operational proof of my ability to turn ideas into reality and understand the technical side from within.
       </p>
     </section>
   );
@@ -99,16 +99,16 @@ function Hero() {
 
 function PourToiSi() {
   const items = [
-    "Tu cherches un Senior PM, Lead PM ou 1st PM pour concevoir et lancer (0 to 1) un produit ou de nouveaux chantiers post-levée.",
-    "Tu veux un profil autonome, capable de naviguer dans le flou sans avoir besoin d'être managé.",
-    "Tu apprécies un PM qui comprend les contraintes des développeurs et sait « drafter » des prototypes pour dérisquer le delivery.",
+    "You're looking for a Senior PM, Lead PM or 1st PM to design and launch (0 to 1) a product or new initiatives post-fundraise.",
+    "You want an autonomous profile, able to navigate ambiguity without needing close management.",
+    "You value a PM who understands developer constraints and can draft prototypes to de-risk delivery.",
   ];
 
   return (
     <section className="border-y border-zinc-100 py-12">
       <div className="max-w-4xl mx-auto px-6">
         <p className="text-xs font-semibold text-indigo-600 tracking-widest uppercase mb-6">
-          Pour toi si...
+          Good fit if...
         </p>
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <ul className="space-y-3">
@@ -121,19 +121,19 @@ function PourToiSi() {
           </ul>
           <div className="text-sm md:border-l border-zinc-100 md:pl-8">
             <p className="text-xs font-semibold text-zinc-400 tracking-widest uppercase mb-3">
-              Pas pour toi si
+              Not a fit if
             </p>
             <p className="text-zinc-400 mb-4">
-              Tu cherches un PM pour simplement faire de la maintenance de backlog (Run)
-              ou gérer des processus rigides dans une grande organisation structurée.
+              You&apos;re looking for a PM to simply maintain a backlog (Run) or
+              manage rigid processes in a large, heavily structured organization.
             </p>
             <p className="text-zinc-400">
-              Ouvert aussi aux missions freelance ponctuelles —{" "}
+              Also open to occasional freelance missions —{" "}
               <a
                 href="#contact"
                 className="text-indigo-600 hover:text-indigo-800 font-medium"
               >
-                écris-moi
+                reach out
               </a>
               .
             </p>
@@ -148,37 +148,36 @@ function About() {
   return (
     <section id="about" className="bg-zinc-50 py-24">
       <div className="max-w-4xl mx-auto px-6">
-        <SectionLabel>À propos</SectionLabel>
+        <SectionLabel>About</SectionLabel>
         <div className="max-w-2xl space-y-5 text-zinc-600 leading-relaxed text-[17px]">
           <p>
-            Après plusieurs années passées à lancer des produits de zéro en
-            startup (notamment comme premier PM chez{" "}
-            <span className="text-zinc-900 font-medium">Pyxo</span> post-Série
-            A), j&apos;ai rejoint le cabinet{" "}
-            <span className="text-zinc-900 font-medium">Thiga</span>. Cette
-            étape de conseil a été le moment clé pour consolider, structurer et
-            théoriser ma pratique du Product Management au contact
-            d&apos;environnements hautement exigeants (Ledger, Electra,
-            Kolecto).
+            After several years launching products from scratch in startups
+            (notably as first PM at{" "}
+            <span className="text-zinc-900 font-medium">Pyxo</span> post-Series
+            A), I joined the consulting firm{" "}
+            <span className="text-zinc-900 font-medium">Thiga</span>. This
+            consulting chapter was the key stage to consolidate, structure and
+            theorize my Product Management practice in contact with highly
+            demanding environments (Ledger, Electra, Kolecto).
           </p>
           <p>
-            Aujourd&apos;hui, je combine ces bases théoriques d&apos;élite
-            (Discovery structurée, frameworks de priorisation, Shape Up, OKRs)
-            avec un style résolument pragmatique et orienté &laquo;&nbsp;faire&nbsp;&raquo;.
-            Je mets cette double force au service de structures agiles pour
-            concevoir et propulser de nouveaux produits (Build).
+            Today, I combine these elite theoretical foundations (structured
+            Discovery, prioritization frameworks, Shape Up, OKRs) with a
+            resolutely pragmatic, action-oriented style. I put this dual
+            strength to work for agile organizations to design and drive new
+            products (Build).
           </p>
           <p className="text-zinc-900 font-medium">
-            Je cherche un poste de Senior PM, Lead PM, ou 1st PM dans une
-            startup avec de l&apos;ambition et une vraie culture produit.
+            I&apos;m looking for a Senior PM, Lead PM, or 1st PM role in a startup
+            with ambition and a genuine product culture.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-8 gap-y-2 mt-10 text-sm">
           {[
-            { lang: "Français", level: "Natif" },
-            { lang: "Anglais", level: "Courant" },
-            { lang: "Espagnol", level: "Courant" },
-            { lang: "Allemand", level: "Notions" },
+            { lang: "French", level: "Native" },
+            { lang: "English", level: "Fluent" },
+            { lang: "Spanish", level: "Fluent" },
+            { lang: "German", level: "Basic" },
           ].map((l) => (
             <span key={l.lang} className="text-zinc-500">
               <span className="text-zinc-800 font-medium">{l.lang}</span> — {l.level}
@@ -193,38 +192,38 @@ function About() {
 const sideProjects = [
   {
     name: "Mescla",
-    tagline: "Web app mobile-first de partage de recettes et de liste de courses",
+    tagline: "Mobile-first web app for recipe sharing and grocery lists",
     problem:
-      "Créer un menu de la semaine prend du temps, faire les courses aussi. Avec des proches, c'est encore plus complexe.",
+      "Planning a week's menu takes time, so does grocery shopping. With friends and family, it gets even more complex.",
     solution:
-      "Une app sociale où tu ajoutes tes recettes, pioches dans celles de tes proches, et génères ta liste de courses en 2 min.",
+      "A social app where you add your recipes, pick from your circle's, and generate your grocery list in 2 minutes.",
     stack: ["Next.js", "Supabase", "Tailwind", "Vercel"],
     links: [
-      { label: "Voir l'app", href: "https://mescla-recipes.vercel.app/recipes" },
+      { label: "View the app", href: "https://mescla-recipes.vercel.app/recipes" },
     ],
   },
   {
     name: "Darts Score Counter",
-    tagline: "Compteur de score fléchettes — PWA installable",
+    tagline: "Darts score counter — installable PWA",
     problem:
-      "Les apps de fléchettes existantes sont surchargées, lentes, ou payantes.",
+      "Existing darts apps are bloated, slow, or paywalled.",
     solution:
-      "Une PWA minimaliste, offline-first, qui démarre en 2 secondes.",
+      "A minimalist, offline-first PWA that starts in 2 seconds.",
     stack: ["Vite", "React", "PWA"],
     links: [
-      { label: "Voir l'app", href: "https://darts-score-counter.vercel.app/" },
+      { label: "View the app", href: "https://darts-score-counter.vercel.app/" },
     ],
   },
   {
     name: "Épicétout2A",
-    tagline: "Site vitrine pour une épicerie corse",
+    tagline: "Showcase site for a Corsican grocery store",
     problem:
-      "Mon père avait besoin d'une présence en ligne pour son épicerie. Aucun budget agence.",
+      "My father needed an online presence for his grocery store. No agency budget.",
     solution:
-      "Un site complet avec présentation, carte des produits et contact — construit avec Claude, déployé en autonomie.",
+      "A complete site with presentation, product listing and contact — built with Claude, deployed autonomously.",
     stack: [],
     links: [
-      { label: "Voir le site", href: "https://epicetout2a.fr/" },
+      { label: "View the site", href: "https://epicetout2a.fr/" },
       { label: "Instagram", href: "https://www.instagram.com/epicetout2a/" },
     ],
   },
@@ -236,8 +235,7 @@ function SideProjects() {
       <div className="max-w-4xl mx-auto px-6">
         <SectionLabel>Side Projects</SectionLabel>
         <p className="text-zinc-500 mb-12 max-w-xl">
-          3 apps construites en autonomie avec l&apos;IA, de l&apos;idée à la
-          production.
+          3 apps built autonomously with AI, from idea to production.
         </p>
         <div className="grid gap-5 md:grid-cols-3">
           {sideProjects.map((p) => (
@@ -251,7 +249,7 @@ function SideProjects() {
               </p>
               <div className="space-y-3 text-sm text-zinc-500 flex-1">
                 <p>
-                  <span className="font-medium text-zinc-700">Problème — </span>
+                  <span className="font-medium text-zinc-700">Problem — </span>
                   {p.problem}
                 </p>
                 <p>
@@ -297,42 +295,42 @@ function SideProjects() {
 const trackRecordItems = [
   {
     company: "Kolecto",
-    period: "2025 – présent",
+    period: "2025 – present",
     domain: "FinTech · SaaS B2B",
     via: "Mission via Thiga",
-    tagline: "Module Devis & Facturation · Discovery agriculture & bâtiment",
+    tagline: "Quotes & Billing module · Agriculture & construction discovery",
     highlight:
-      "1ère feature de vente de la plateforme. Anticipation e-facturation 2026.",
+      "1st sales-generating feature of the platform. 2026 e-invoicing anticipated.",
     slug: "kolecto",
   },
   {
     company: "Thiga",
-    period: "2024 – présent",
-    domain: "Conseil PM",
+    period: "2024 – present",
+    domain: "PM Consulting",
     via: undefined as string | undefined,
-    tagline: "Senior PM Consultant · Missions scale-ups",
+    tagline: "Senior PM Consultant · Scale-up missions",
     highlight:
-      "Cabinet de conseil qui m'a staffé chez Kolecto, Electra et Ledger. Ownership total dès J1.",
+      "The consulting firm that staffed me at Kolecto, Electra and Ledger. Full ownership from day 1.",
     slug: "thiga",
   },
   {
     company: "Thiga Academy",
-    period: "janv. 2025 – présent",
-    domain: "Formation PM",
-    via: "Pôle formation de Thiga",
-    tagline: "Formateur Product Management & Product Discovery",
+    period: "Jan. 2025 – present",
+    domain: "PM Training",
+    via: "Thiga's training arm",
+    tagline: "Product Management & Product Discovery Trainer",
     highlight:
-      "Sessions pour des groupes de PMs en entreprise. Sujets Senior PM & Discovery.",
+      "Sessions for groups of in-house PMs. Senior PM & Discovery topics.",
     slug: "thiga-academy",
   },
   {
     company: "Electra",
-    period: "janv. – mai 2025",
+    period: "Jan. – May 2025",
     domain: "GreenTech",
     via: "Mission via Thiga",
-    tagline: "4 000 → 11 000 bornes via Spark Alliance",
+    tagline: "4,000 → 11,000 chargers via Spark Alliance",
     highlight:
-      "UX recharge repensée. App Android Auto. Discovery planificateur EV.",
+      "Charging UX redesigned. Android Auto app. EV planner discovery.",
     slug: "electra",
   },
   {
@@ -340,9 +338,9 @@ const trackRecordItems = [
     period: "2024",
     domain: "Crypto",
     via: "Mission via Thiga",
-    tagline: "Feature SWAP → 70% du CA de Ledger Live",
+    tagline: "SWAP feature → 70% of Ledger Live's revenue",
     highlight:
-      "Delivery dans les délais. Intégrations DEX opérationnelles.",
+      "Delivered on time. DEX integrations operational.",
     slug: "ledger-swap",
   },
   {
@@ -350,18 +348,18 @@ const trackRecordItems = [
     period: "2021 – 2023",
     domain: "FoodTech",
     via: undefined as string | undefined,
-    tagline: "1er PM · 2 apps de zéro · 5 devs · post-Série A",
+    tagline: "1st PM · 2 apps from scratch · 5 devs · post-Series A",
     highlight:
-      "Grands comptes signés : McDonald's, CROUS, Sushi Shop, Metro.",
+      "Major accounts signed: McDonald's, CROUS, Sushi Shop, Metro.",
     slug: "pyxo",
   },
   {
     company: "Calldesk",
     period: "2019 – 2021",
-    domain: "IA Conversationnelle",
+    domain: "Conversational AI",
     via: undefined as string | undefined,
-    tagline: "Time-to-production : 6 mois → 2 semaines",
-    highlight: "1 CSM suffit là où il fallait 2 devs + 1 CSM.",
+    tagline: "Time-to-production: 6 months → 2 weeks",
+    highlight: "1 CSM is enough where it used to take 2 devs + 1 CSM.",
     slug: "calldesk",
   },
 ];
@@ -372,13 +370,13 @@ function TrackRecord() {
       <div className="max-w-4xl mx-auto px-6">
         <SectionLabel>PM Track Record</SectionLabel>
         <p className="text-zinc-500 mb-12 max-w-xl">
-          7 ans de delivery en startup et scale-up.
+          7 years of delivery in startups and scale-ups.
         </p>
         <div className="grid gap-5 md:grid-cols-3">
           {trackRecordItems.map((item) => (
             <Link
               key={item.slug}
-              href={`/case/${item.slug}`}
+              href={`/en/case/${item.slug}`}
               className="group border border-zinc-100 bg-white rounded-xl p-6 hover:border-indigo-200 hover:shadow-sm transition-all flex flex-col"
             >
               <div className="flex items-start justify-between mb-1">
@@ -398,7 +396,7 @@ function TrackRecord() {
               </p>
               <p className="text-sm text-zinc-500 mb-5">{item.highlight}</p>
               <span className="text-xs font-medium text-indigo-600 group-hover:text-indigo-800 transition-colors">
-                Lire le case study →
+                Read the case study →
               </span>
             </Link>
           ))}
@@ -412,51 +410,47 @@ function HowIWork() {
   return (
     <section id="how-i-work" className="py-24">
       <div className="max-w-4xl mx-auto px-6">
-        <SectionLabel>Comment je travaille</SectionLabel>
+        <SectionLabel>How I work</SectionLabel>
         <div className="grid gap-10 md:grid-cols-2 mt-2">
           <div>
-            <h3 className="font-semibold text-zinc-900 mb-3">Méthodes</h3>
+            <h3 className="font-semibold text-zinc-900 mb-3">Methods</h3>
             <p className="text-zinc-500 text-sm leading-relaxed">
-              Shape Up quand l&apos;équipe a besoin de focus et
-              d&apos;itérations courtes. Agile dans les organisations déjà
-              structurées. OKRs pour aligner vision et exécution sur le temps
-              long. Je m&apos;adapte — ce qui compte c&apos;est que
-              l&apos;équipe avance, pas le nom du processus.
+              Shape Up when the team needs focus and short iterations. Agile
+              in already-structured organizations. OKRs to align vision and
+              execution over the long run. I adapt — what matters is that the
+              team moves forward, not the name of the process.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-zinc-900 mb-3">
-              IA dans ma pratique PM
+              AI in my PM practice
             </h3>
             <p className="text-zinc-500 text-sm leading-relaxed">
-              J&apos;utilise l&apos;IA tous les jours : synthèse
-              d&apos;interviews utilisateurs, analyse de feedback, rédaction de
-              specs, préparation de présentations, exploration de solutions. Ce
-              n&apos;est pas une posture — c&apos;est devenu une partie
-              intégrante de comment je travaille.
+              I use AI every day: synthesizing user interviews, analyzing
+              feedback, drafting specs, preparing presentations, exploring
+              solutions. It&apos;s not a posture — it has become an integral part
+              of how I work.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-zinc-900 mb-3">
-              IA comme outil de build
+              AI as a build tool
             </h3>
             <p className="text-zinc-800 text-sm font-medium mb-2">
-              Drafter le plus loin possible avec l&apos;IA.
+              Drafting as far as possible with AI.
             </p>
             <p className="text-zinc-500 text-sm leading-relaxed">
-              Je ne me contente pas de rédiger des spécifications fonctionnelles
-              abstraites. J&apos;utilise la puissance de l&apos;IA pour coder et
-              déployer de vraies applications de test (Mescla, Darts Score). Mon
-              but n&apos;est pas de pousser mon code en production dans votre
-              entreprise, mais de pousser le &laquo;&nbsp;draft&nbsp;&raquo; au
-              plus proche de la réalité. Cela me permet d&apos;identifier les
-              failles de spécifications, de parler le même langage que mes
-              équipes techniques et de m&apos;assurer que ce que nous
-              développerons en équipe sera d&apos;une pertinence absolue.
+              I don&apos;t just write abstract functional specs. I use the power
+              of AI to code and deploy real test applications (Mescla, Darts
+              Score). My goal isn&apos;t to push my code to production in your
+              company, but to push the &quot;draft&quot; as close to reality as
+              possible. This lets me spot spec gaps, speak the same language
+              as my technical teams, and make sure what we build together is
+              absolutely relevant.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-zinc-900 mb-3">Outils</h3>
+            <h3 className="font-semibold text-zinc-900 mb-3">Tools</h3>
             <div className="flex flex-wrap gap-2">
               {[
                 "Figma",
@@ -490,19 +484,19 @@ function Contact() {
   return (
     <footer id="contact" className="bg-zinc-900 text-white py-24">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-14">Parlons-en.</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-14">Let&apos;s talk.</h2>
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {/* Option CDI — prioritaire */}
+          {/* Full-time option — priority */}
           <div className="border border-zinc-700 rounded-xl p-8 flex flex-col gap-6">
             <div>
               <p className="text-xs font-semibold text-indigo-400 tracking-widest uppercase mb-3">
-                Poste CDI · Prioritaire
+                Full-time role · Priority
               </p>
               <p className="text-zinc-300 text-sm leading-relaxed">
-                Tu cherches ton futur Senior PM, Lead PM ou premier PM à temps
-                plein (sur Lille, Paris ou en télétravail) pour structurer et
-                lancer un nouveau produit&nbsp;? Discutons de vos défis produit
-                du moment autour d&apos;un café virtuel.
+                Looking for your next Senior PM, Lead PM, or first full-time
+                PM (Lille, Paris, or remote) to structure and launch a new
+                product? Let&apos;s discuss your current product challenges over
+                a virtual coffee.
               </p>
             </div>
             <a
@@ -511,29 +505,28 @@ function Contact() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-indigo-600 text-white px-5 py-3 rounded-lg text-sm font-medium hover:bg-indigo-500 transition-colors self-start"
             >
-              Réserver un créneau →
+              Book a slot →
             </a>
           </div>
 
-          {/* Option Freelance */}
+          {/* Freelance option */}
           <div className="border border-zinc-700 rounded-xl p-8 flex flex-col gap-6">
             <div>
               <p className="text-xs font-semibold text-zinc-400 tracking-widest uppercase mb-3">
-                Mission Freelance · Conseil
+                Freelance mission · Consulting
               </p>
               <p className="text-zinc-300 text-sm leading-relaxed">
-                Tu as besoin d&apos;un coup de boost méthodologique ponctuel,
-                d&apos;un sprint de Discovery express ou d&apos;un prototype
-                fonctionnel (MVP) drafté à la vitesse de l&apos;éclair grâce à
-                l&apos;IA&nbsp;? Sollicite une mission de conseil ou de
-                transition.
+                Need a one-off methodology boost, an express discovery
+                sprint, or a functional prototype (MVP) drafted at
+                lightning speed with AI? Reach out for a consulting or
+                transition mission.
               </p>
             </div>
             <a
               href="mailto:louis.bolatre@gmail.com"
               className="inline-flex items-center gap-2 border border-zinc-600 text-zinc-300 px-5 py-3 rounded-lg text-sm font-medium hover:border-zinc-400 hover:text-white transition-colors self-start"
             >
-              Écrire un e-mail →
+              Send an e-mail →
             </a>
           </div>
         </div>
