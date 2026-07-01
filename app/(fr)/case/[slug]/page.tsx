@@ -21,6 +21,13 @@ export async function generateMetadata({ params }: PageProps<"/case/[slug]">) {
   return {
     title: `${meta.company} — Louis Bolatre`,
     description: meta.tagline,
+    alternates: {
+      canonical: `/case/${slug}`,
+      languages: {
+        fr: `/case/${slug}`,
+        en: `/en/case/${slug}`,
+      },
+    },
   };
 }
 

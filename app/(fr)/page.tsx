@@ -8,7 +8,7 @@ import { TrackRecord } from "./_sections/track-record";
 import { HowIWork } from "./_sections/how-i-work";
 import { Contact } from "./_sections/contact";
 
-export default function HomeEn() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Nav />

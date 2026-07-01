@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import "../globals.css";
 
 const geist = Geist({
   variable: "--font-geist-sans",
@@ -61,7 +62,7 @@ const personJsonLd = {
   },
 };
 
-export default function RootLayout({
+export default function RootLayoutFr({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -74,6 +75,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
         {children}
+        <Analytics />
       </body>
     </html>
   );
