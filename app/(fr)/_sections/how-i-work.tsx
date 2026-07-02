@@ -43,8 +43,8 @@ export function HowIWork() {
               entreprise, mais de pousser le &laquo;&nbsp;draft&nbsp;&raquo; au
               plus proche de la réalité. Cela me permet d&apos;identifier les
               failles de spécifications, de parler le même langage que mes
-              équipes techniques et de m&apos;assurer que ce que nous
-              développerons en équipe sera d&apos;une pertinence absolue.
+              équipes techniques et de m&apos;assurer que ce qu&apos;on
+              développe ensemble est vraiment pertinent.
             </p>
           </div>
           <div>

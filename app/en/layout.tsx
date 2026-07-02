@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://louisbolatre.com"),
   title: "Louis Bolatre — Senior Product Manager",
   description:
-    "Senior PM with 6 years of experience in startups & scale-ups. Discovery → Delivery → and I build too.",
+    "Senior PM with 7 years of experience in startups & scale-ups. Discovery → Delivery → and I build too.",
   alternates: {
     canonical: "/en",
     languages: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Louis Bolatre — Senior Product Manager",
     description:
-      "Senior PM with 6 years of experience in startups & scale-ups. Discovery → Delivery → and I build too.",
+      "Senior PM with 7 years of experience in startups & scale-ups. Discovery → Delivery → and I build too.",
     url: "https://louisbolatre.com/en",
     siteName: "Louis Bolatre",
     locale: "en_US",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Louis Bolatre — Senior Product Manager",
     description:
-      "Senior PM with 6 years of experience in startups & scale-ups. Discovery → Delivery → and I build too.",
+      "Senior PM with 7 years of experience in startups & scale-ups. Discovery → Delivery → and I build too.",
   },
 };
 

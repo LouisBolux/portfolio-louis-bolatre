@@ -13,16 +13,6 @@ const trackRecordItems = [
     slug: "kolecto",
   },
   {
-    company: "Thiga",
-    period: "2024 – présent",
-    domain: "Conseil PM",
-    via: undefined as string | undefined,
-    tagline: "Senior PM Consultant · Missions scale-ups",
-    highlight:
-      "Cabinet de conseil qui m'a staffé chez Kolecto, Electra et Ledger. Ownership total dès J1.",
-    slug: "thiga",
-  },
-  {
     company: "Thiga Academy",
     period: "janv. 2025 – présent",
     domain: "Formation PM",
@@ -51,6 +41,16 @@ const trackRecordItems = [
     highlight:
       "Delivery dans les délais. Intégrations DEX opérationnelles.",
     slug: "ledger-swap",
+  },
+  {
+    company: "Thiga",
+    period: "2024 – présent",
+    domain: "Conseil PM",
+    via: undefined as string | undefined,
+    tagline: "Senior PM Consultant · Missions scale-ups",
+    highlight:
+      "Cabinet de conseil qui m'a staffé chez Kolecto, Electra et Ledger. Ownership total dès J1.",
+    slug: "thiga",
   },
   {
     company: "Pyxo",
@@ -105,7 +105,7 @@ export function TrackRecord() {
               </p>
               <p className="text-sm text-zinc-500 mb-5">{item.highlight}</p>
               <span className="text-xs font-medium text-indigo-600 group-hover:text-indigo-800 transition-colors">
-                Lire le case study →
+                Lire l&apos;étude de cas →
               </span>
             </Link>
           ))}

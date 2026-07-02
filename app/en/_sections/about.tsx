@@ -7,35 +7,38 @@ export function About() {
         <SectionLabel>About</SectionLabel>
         <div className="max-w-2xl space-y-5 text-zinc-600 leading-relaxed text-[17px]">
           <p>
-            After several years launching products from scratch in startups
-            (notably as first PM at{" "}
-            <span className="text-zinc-900 font-medium">Pyxo</span> post-Series
-            A), I joined the consulting firm{" "}
-            <span className="text-zinc-900 font-medium">Thiga</span>. This
-            consulting chapter was the key stage to consolidate, structure and
-            theorize my Product Management practice in contact with highly
-            demanding environments (Ledger, Electra, Kolecto).
+            I started out in 2019 at Calldesk, building conversational AI
+            bots. After several years launching products from scratch in
+            startups (notably as first PM at{" "}
+            <span className="text-zinc-900 font-medium">Pyxo</span>{" "}
+            post-Series A), I took a career break — including a brewing
+            process technician certification (CQP, La Beer Fabrique) —
+            before joining the consulting firm{" "}
+            <span className="text-zinc-900 font-medium">Thiga</span>. Those
+            consulting missions helped me structure and theorize my Product
+            Management practice, in contact with demanding environments
+            (Ledger, Electra, Kolecto).
           </p>
           <p>
-            Today, I combine these elite theoretical foundations (structured
+            Today, I combine those theoretical foundations (structured
             Discovery, prioritization frameworks, Shape Up, OKRs) with a
-            resolutely pragmatic, action-oriented style. I put this dual
-            strength to work for agile organizations to design and drive new
-            products (Build).
+            pragmatic, action-oriented style. I use that mix to design and
+            ship new products (Build).
           </p>
           <p className="text-zinc-900 font-medium">
-            I&apos;m looking for a Senior PM, Lead PM, or 1st PM role in a startup
-            with ambition and a genuine product culture.
+            I&apos;m looking for a 1st PM, Senior PM or Lead PM role, at a
+            startup, scaleup, or SME building out its product practice.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-8 gap-y-2 mt-10 text-sm">
           {[
-            { lang: "French", level: "Native" },
-            { lang: "English", level: "Fluent" },
-            { lang: "Spanish", level: "Fluent" },
-            { lang: "German", level: "Basic" },
+            { flag: "🇫🇷", lang: "French", level: "Native" },
+            { flag: "🇬🇧", lang: "English", level: "Fluent" },
+            { flag: "🇪🇸", lang: "Spanish", level: "Fluent" },
+            { flag: "🇩🇪", lang: "German", level: "Basic" },
           ].map((l) => (
             <span key={l.lang} className="text-zinc-500">
+              <span aria-hidden="true">{l.flag}</span>{" "}
               <span className="text-zinc-800 font-medium">{l.lang}</span> — {l.level}
             </span>
           ))}

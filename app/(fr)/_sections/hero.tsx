@@ -8,12 +8,12 @@ export function Hero() {
         Louis Bolatre
       </h1>
       <p className="text-xl md:text-2xl font-semibold text-zinc-800 max-w-2xl mb-4 leading-snug">
-        Senior PM. Concepteur &amp; Bâtisseur de produits (0 to 1).
+        Senior PM — 7 ans d&apos;XP — Build &amp; Scale.
       </p>
       <p className="text-lg text-zinc-500 max-w-xl mb-12 leading-relaxed">
-        Allier des bases théoriques solides à un style résolument pragmatique.
-        Je combine la rigueur de la Discovery et la vélocité de l&apos;ingénierie
-        rapide avec l&apos;IA pour concevoir, structurer et lancer des produits complexes.
+        Bases théoriques solides, style pragmatique. Je mixe la rigueur de la
+        Discovery avec la rapidité de l&apos;IA pour concevoir et lancer des
+        produits complexes.
       </p>
       <div className="flex flex-wrap gap-3 mb-8">
         <a
@@ -38,9 +38,8 @@ export function Hero() {
         </a>
       </div>
       <p className="text-xs text-zinc-500 italic">
-        Ce portfolio a été codé en autonomie avec{" "}
-        <span className="text-zinc-600 font-medium not-italic">Claude Code</span>{" "}
-        — preuve opérationnelle de ma capacité à matérialiser mes idées et à comprendre la technique de l&apos;intérieur.
+        Ce portfolio, je l&apos;ai codé moi-même avec{" "}
+        <span className="text-zinc-600 font-medium not-italic">Claude Code</span>.
       </p>
     </section>
   );

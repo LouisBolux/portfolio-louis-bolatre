@@ -94,7 +94,7 @@ export default async function CaseStudyPageEn({ params }: PageProps<"/en/case/[s
             href="/en#contact"
             className="inline-flex items-center gap-2 bg-zinc-900 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors"
           >
-            Get in touch
+            Get in touch →
           </Link>
         </div>
       </footer>

@@ -13,16 +13,6 @@ const trackRecordItems = [
     slug: "kolecto",
   },
   {
-    company: "Thiga",
-    period: "2024 – present",
-    domain: "PM Consulting",
-    via: undefined as string | undefined,
-    tagline: "Senior PM Consultant · Scale-up missions",
-    highlight:
-      "The consulting firm that staffed me at Kolecto, Electra and Ledger. Full ownership from day 1.",
-    slug: "thiga",
-  },
-  {
     company: "Thiga Academy",
     period: "Jan. 2025 – present",
     domain: "PM Training",
@@ -51,6 +41,16 @@ const trackRecordItems = [
     highlight:
       "Delivered on time. DEX integrations operational.",
     slug: "ledger-swap",
+  },
+  {
+    company: "Thiga",
+    period: "2024 – present",
+    domain: "PM Consulting",
+    via: undefined as string | undefined,
+    tagline: "Senior PM Consultant · Scale-up missions",
+    highlight:
+      "The consulting firm that staffed me at Kolecto, Electra and Ledger. Full ownership from day 1.",
+    slug: "thiga",
   },
   {
     company: "Pyxo",

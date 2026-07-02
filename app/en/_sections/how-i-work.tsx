@@ -40,7 +40,7 @@ export function HowIWork() {
               company, but to push the &quot;draft&quot; as close to reality as
               possible. This lets me spot spec gaps, speak the same language
               as my technical teams, and make sure what we build together is
-              absolutely relevant.
+              actually relevant.
             </p>
           </div>
           <div>

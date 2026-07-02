@@ -1,6 +1,6 @@
 export function PourToiSi() {
   const items = [
-    "You're looking for a Senior PM, Lead PM or 1st PM to design and launch (0 to 1) a product or new initiatives post-fundraise.",
+    "You're looking for a 1st PM, Senior PM or Lead PM to build (0 to 1) or scale a product — at a startup, scaleup, or SME building out its product practice.",
     "You want an autonomous profile, able to navigate ambiguity without needing close management.",
     "You value a PM who understands developer constraints and can draft prototypes to de-risk delivery.",
   ];
@@ -19,24 +19,27 @@ export function PourToiSi() {
                 {item}
               </li>
             ))}
+            <li className="flex gap-3 text-sm text-zinc-600">
+              <span className="text-indigo-600 font-bold shrink-0">✓</span>
+              <span>
+                Also open to occasional freelance missions —{" "}
+                <a
+                  href="#contact"
+                  className="text-indigo-600 hover:text-indigo-800 font-medium"
+                >
+                  reach out
+                </a>
+                .
+              </span>
+            </li>
           </ul>
           <div className="text-sm md:border-l border-zinc-100 md:pl-8">
             <p className="text-xs font-semibold text-zinc-500 tracking-widest uppercase mb-3">
               Not a fit if
             </p>
-            <p className="text-zinc-500 mb-4">
+            <p className="text-zinc-500">
               You&apos;re looking for a PM to simply maintain a backlog (Run) or
               manage rigid processes in a large, heavily structured organization.
-            </p>
-            <p className="text-zinc-500">
-              Also open to occasional freelance missions —{" "}
-              <a
-                href="#contact"
-                className="text-indigo-600 hover:text-indigo-800 font-medium"
-              >
-                reach out
-              </a>
-              .
             </p>
           </div>
         </div>

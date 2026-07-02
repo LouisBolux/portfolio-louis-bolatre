@@ -1,6 +1,6 @@
 export function PourToiSi() {
   const items = [
-    "Tu cherches un Senior PM, Lead PM ou 1st PM pour concevoir et lancer (0 to 1) un produit ou de nouveaux chantiers post-levée.",
+    "Tu cherches un 1st PM, Senior PM ou Lead PM pour construire (0 to 1) ou scaler un produit — en startup, scaleup, ou TPE/PME qui structure sa pratique produit.",
     "Tu veux un profil autonome, capable de naviguer dans le flou sans avoir besoin d'être managé.",
     "Tu apprécies un PM qui comprend les contraintes des développeurs et sait « drafter » des prototypes pour dérisquer le delivery.",
   ];
@@ -19,24 +19,27 @@ export function PourToiSi() {
                 {item}
               </li>
             ))}
+            <li className="flex gap-3 text-sm text-zinc-600">
+              <span className="text-indigo-600 font-bold shrink-0">✓</span>
+              <span>
+                Ouvert aussi aux missions freelance ponctuelles —{" "}
+                <a
+                  href="#contact"
+                  className="text-indigo-600 hover:text-indigo-800 font-medium"
+                >
+                  écris-moi
+                </a>
+                .
+              </span>
+            </li>
           </ul>
           <div className="text-sm md:border-l border-zinc-100 md:pl-8">
             <p className="text-xs font-semibold text-zinc-500 tracking-widest uppercase mb-3">
               Pas pour toi si
             </p>
-            <p className="text-zinc-500 mb-4">
+            <p className="text-zinc-500">
               Tu cherches un PM pour simplement faire de la maintenance de backlog (Run)
               ou gérer des processus rigides dans une grande organisation structurée.
-            </p>
-            <p className="text-zinc-500">
-              Ouvert aussi aux missions freelance ponctuelles —{" "}
-              <a
-                href="#contact"
-                className="text-indigo-600 hover:text-indigo-800 font-medium"
-              >
-                écris-moi
-              </a>
-              .
             </p>
           </div>
         </div>

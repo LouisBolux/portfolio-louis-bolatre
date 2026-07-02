@@ -15,10 +15,18 @@ export function Nav() {
             Projets
           </a>
           <a href="#track-record" className="hover:text-zinc-900 transition-colors py-2 -my-2 inline-block">
-            Track Record
+            Parcours
           </a>
           <a href="#contact" className="hover:text-zinc-900 transition-colors py-2 -my-2 inline-block">
             Contact
+          </a>
+          <a
+            href="https://www.linkedin.com/in/louis-bolatre-product-manager-pm/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-900 transition-colors py-2 -my-2 inline-block"
+          >
+            LinkedIn
           </a>
           <Link
             href="/en"

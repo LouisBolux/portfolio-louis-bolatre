@@ -49,7 +49,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/case/[slug]"
           </Link>
           <div className="flex items-center gap-4">
             <span className="text-xs text-zinc-400 font-medium tracking-wide uppercase">
-              Case Study
+              Étude de cas
             </span>
             <Link
               href={`/en/case/${slug}`}
@@ -83,7 +83,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/case/[slug]"
       <footer className="border-t border-zinc-100 py-12">
         <div className="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
-            <p className="text-sm text-zinc-500 mb-1">Autres case studies</p>
+            <p className="text-sm text-zinc-500 mb-1">Autres études de cas</p>
             <div className="flex gap-4 flex-wrap">
               {cases
                 .filter((c) => c.slug !== slug)
@@ -102,7 +102,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/case/[slug]"
             href="/#contact"
             className="inline-flex items-center gap-2 bg-zinc-900 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors"
           >
-            Me contacter
+            Me contacter →
           </Link>
         </div>
       </footer>
