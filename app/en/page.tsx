@@ -1,6 +1,5 @@
 import { Nav } from "./_sections/nav";
 import { Hero } from "./_sections/hero";
-import { SocialProof } from "./_sections/social-proof";
 import { PourToiSi } from "./_sections/pour-toi-si";
 import { About } from "./_sections/about";
 import { SideProjects } from "./_sections/side-projects";
@@ -14,7 +13,6 @@ export default function HomeEn() {
       <Nav />
       <main>
         <Hero />
-        <SocialProof />
         <PourToiSi />
         <About />
         <SideProjects />
