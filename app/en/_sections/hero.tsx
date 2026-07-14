@@ -29,7 +29,7 @@ export function Hero() {
           Get in touch →
         </a>
         <a
-          href="/cv-louis-bolatre.pdf"
+          href="/cv-louis-bolatre-en.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 border border-zinc-200 text-zinc-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-zinc-50 transition-colors"
